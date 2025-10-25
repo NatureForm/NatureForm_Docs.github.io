@@ -1,1 +1,17 @@
-site_name: NatureForm
+site_name: 'NatureForm Documentation'
+site_url: 'https://your-username.github.io/NatureForm_Docs.github.io/' # Update with your URL
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+
+nav:
+  - 'Home': 'index.md'
+  - 'Frontend':
+    - '2D Physics': 'Frontend/2dPhysics.md'
+    - 'Floorplan Configurator': 'Frontend/FloorplanConfigurator.md'
+    - 'Framework': 'Frontend/Framework.md'
+    - 'Model Configurator': 'Frontend/ModelConfigurator.md'
+    - 'Silhouette Extractor': 'Frontend/SilhouetteExtractor.md'
+    - 'Three.js': 'Frontend/ThreeJS.md'
