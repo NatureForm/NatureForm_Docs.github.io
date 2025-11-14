@@ -1,17 +1,49 @@
 site_name: 'NatureForm Documentation'
-site_url: 'https://natureform.github.io/NatureForm_Docs.github.io/' 
+site_url: 'https://natureform.github.io' 
 
 theme:
   name: material
   features:
     - navigation.tabs
+    # --- Added for "clean/modern" feel ---
+    - navigation.instant    # Clicks load pages instantly
+    - navigation.top        # Adds a "back to top" button
+    - header.autohide       # Header hides on scroll
+    - search.suggest        # Search auto-completion
+    - search.highlight      # Highlights search results on the page
+  
+  # --- Added for "dark theme" ---
+  palette:
+    # Palette toggle for dark mode (this is the default)
+    - scheme: slate
+      primary: blue   # You can change this (e.g., indigo, teal, purple)
+      accent: blue    # You can change this
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
 
 nav:
   - 'Home': 'index.md'
   - 'Frontend':
-    - '2D Physics': 'Frontend/2dPhysics.md'
+    - 'Model Configurator':
+      - 'Overview': 'Frontend/ModelConfigurator/index.md'
+      - 'Collision': 'Frontend/ModelConfigurator/Collision.md'
+      - 'WrappingLogic': 'Frontend/ModelConfigurator/WrappingLogic.md'
+      - 'Silhouette Extractor': 'Frontend/ModelConfigurator/SilhouetteExtractor.md'
     - 'Floorplan Configurator': 'Frontend/FloorplanConfigurator.md'
     - 'Framework': 'Frontend/Framework.md'
-    - 'Model Configurator': 'Frontend/ModelConfigurator.md'
-    - 'Silhouette Extractor': 'Frontend/SilhouetteExtractor.md'
-    - 'Three.js': 'Frontend/ThreeJS.md'
+  - 'ThreeJS':
+    - "Overview": 'ThreeJS/index.md'
+  - 'Cad to ThreeJS':
+    - 'Overview': 'CadToThreeJS/index.md'
+    - 'GLB + Parameters': 'CadToThreeJS/GLB+Parameters.md'
+    - 'Object Wrapping': 'CadToThreeJS/Wrapping.md'
+    - 'Feature Tree Transpiling': 'CadToThreeJS/FeatureTreeToManifold3d.md'
