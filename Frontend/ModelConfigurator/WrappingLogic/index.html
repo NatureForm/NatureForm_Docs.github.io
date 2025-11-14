@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://natureform.github.io/Frontend/Framework/">
+        <link rel="canonical" href="https://natureform.github.io/Frontend/ModelConfigurator/WrappingLogic/">
       
       
-        <link rel="prev" href="../FloorplanConfigurator/">
+        <link rel="prev" href="../Collision/">
       
       
-        <link rel="next" href="../../ThreeJS/">
+        <link rel="next" href="../SilhouetteExtractor/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>Framework - NatureForm Documentation</title>
+        <title>WrappingLogic - NatureForm Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#framework-why-we-use-react" class="md-skip">
+        <a href="#procedural-crate-generation" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="NatureForm Documentation" class="md-header__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
+    <a href="../../.." title="NatureForm Documentation" class="md-header__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Framework
+              WrappingLogic
             
           </span>
         </div>
@@ -209,7 +209,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -241,7 +241,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../ModelConfigurator/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ThreeJS/" class="md-tabs__link">
+        <a href="../../../ThreeJS/" class="md-tabs__link">
           
   
   
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../CadToThreeJS/" class="md-tabs__link">
+        <a href="../../../CadToThreeJS/" class="md-tabs__link">
           
   
   
@@ -318,7 +318,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="NatureForm Documentation" class="md-nav__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
+    <a href="../../.." title="NatureForm Documentation" class="md-nav__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -336,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -401,6 +401,8 @@
                 
   
   
+    
+  
   
   
     
@@ -411,11 +413,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -431,7 +433,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Model Configurator
@@ -445,7 +447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ModelConfigurator/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -468,89 +470,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../ModelConfigurator/Collision/" class="md-nav__link">
+      <a href="../Collision/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Collision
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ModelConfigurator/WrappingLogic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    WrappingLogic
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ModelConfigurator/SilhouetteExtractor/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Silhouette Extractor
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FloorplanConfigurator/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Floorplan Configurator
     
   </span>
   
@@ -582,7 +507,7 @@
   
   
   <span class="md-ellipsis">
-    Framework
+    WrappingLogic
     
   </span>
   
@@ -595,7 +520,7 @@
   
   
   <span class="md-ellipsis">
-    Framework
+    WrappingLogic
     
   </span>
   
@@ -618,39 +543,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-react" class="md-nav__link">
+  <a href="#core-logic-snapping-and-rebuilding" class="md-nav__link">
     <span class="md-ellipsis">
-      Why React?
+      Core Logic: Snapping and Rebuilding
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-all-works-together-data-flow" class="md-nav__link">
+  <a href="#class-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      How It All Works Together: Data Flow
+      Class Reference
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How It All Works Together: Data Flow">
+    <nav class="md-nav" aria-label="Class Reference">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-step-by-step-flow" class="md-nav__link">
+  <a href="#wrappedcrate" class="md-nav__link">
     <span class="md-ellipsis">
-      The Step-by-Step Flow
+      WrappedCrate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WrappedCrate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructorinitialsize-plankwidth-plankthickness-material-maxplanks" class="md-nav__link">
+    <span class="md-ellipsis">
+      constructor(initialSize, plankWidth, plankThickness, material, maxPlanks)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-bridge-to-threejs-useeffect" class="md-nav__link">
+  <a href="#setsizerequestedsize" class="md-nav__link">
     <span class="md-ellipsis">
-      The Bridge to three.js: useEffect
+      .setSize(requestedSize)
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -663,6 +603,83 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SilhouetteExtractor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Silhouette Extractor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FloorplanConfigurator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Floorplan Configurator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Framework
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -723,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ThreeJS/" class="md-nav__link">
+      <a href="../../../ThreeJS/" class="md-nav__link">
         
   
   
@@ -794,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/" class="md-nav__link">
         
   
   
@@ -817,7 +834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/GLB%2BParameters/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/GLB%2BParameters/" class="md-nav__link">
         
   
   
@@ -840,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/Wrapping/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/Wrapping/" class="md-nav__link">
         
   
   
@@ -863,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/FeatureTreeToManifold3d/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/FeatureTreeToManifold3d/" class="md-nav__link">
         
   
   
@@ -913,39 +930,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-react" class="md-nav__link">
+  <a href="#core-logic-snapping-and-rebuilding" class="md-nav__link">
     <span class="md-ellipsis">
-      Why React?
+      Core Logic: Snapping and Rebuilding
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-all-works-together-data-flow" class="md-nav__link">
+  <a href="#class-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      How It All Works Together: Data Flow
+      Class Reference
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How It All Works Together: Data Flow">
+    <nav class="md-nav" aria-label="Class Reference">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-step-by-step-flow" class="md-nav__link">
+  <a href="#wrappedcrate" class="md-nav__link">
     <span class="md-ellipsis">
-      The Step-by-Step Flow
+      WrappedCrate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WrappedCrate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constructorinitialsize-plankwidth-plankthickness-material-maxplanks" class="md-nav__link">
+    <span class="md-ellipsis">
+      constructor(initialSize, plankWidth, plankThickness, material, maxPlanks)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-bridge-to-threejs-useeffect" class="md-nav__link">
+  <a href="#setsizerequestedsize" class="md-nav__link">
     <span class="md-ellipsis">
-      The Bridge to three.js: useEffect
+      .setSize(requestedSize)
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -970,88 +1002,45 @@
 
 
 
-<h1 id="framework-why-we-use-react">Framework: Why We Use React</h1>
-<p>This document provides a high-level overview of why React was chosen as the framework for this application and how its core principles are used to manage our interactive tools.</p>
-<h2 id="why-react">Why React?</h2>
-<p>React is a JavaScript library for building user interfaces. It's particularly well-suited for our project, which involves managing complex, interactive state for both a 2D editor and a 3D configurator.</p>
-<ul>
-<li>
-<p><strong>Component-Based Architecture:</strong> Our entire application is built from small, independent, and reusable "components."</p>
-<ul>
-<li>The <code>Floorplan</code> selector is a component.</li>
-<li>The <code>FloorplanWorkspace</code> editor is another component.</li>
-<li>The <code>Configurator</code> 3D scene is a component.</li>
-<li>Even the UI sliders and buttons are individual components.
-    This makes the code easy to manage, test, and update without one part breaking another.</li>
-</ul>
-</li>
-<li>
-<p><strong>Declarative UI (State Management):</strong> This is the most important concept.</p>
-<ul>
-<li><strong>Traditional (Imperative):</strong> In older code, you'd write step-by-step instructions like: "find the slider," "get its value," "find the 3D model," "update the model's X position." This is complex and error-prone.</li>
-<li><strong>React (Declarative):</strong> We simply <em>declare</em> the state we want. We have a state variable, <code>modelPositionX</code>. The slider's value is <em>bound</em> to this state, and the 3D model's position is <em>derived</em> from this state. When the user moves the slider, it updates the state, and React automatically ensures the 3D model's position updates to match. We just describe the "what" (the model's position should match this variable), and React handles the "how."</li>
-</ul>
-</li>
-<li>
-<p><strong>Rich Ecosystem:</strong> React is the most popular UI library, meaning it has a massive community and integrates well with other libraries. This is crucial for us, as it simplifies the integration of powerful tools like <strong><code>three.js</code></strong> (for 3D graphics) and <strong><code>react-router-dom</code></strong> (for navigation).</p>
-</li>
-</ul>
-<h2 id="how-it-all-works-together-data-flow">How It All Works Together: Data Flow</h2>
-<p>React uses a <strong>one-way data flow</strong>, which makes the application predictable. Data flows "down" from parent components to children, and events (like user clicks) flow "up" via callback functions.</p>
-<p>Here is a simplified diagram of our application's architecture:</p>
-<pre><code>[ App.js ]  &lt;---------------------------------------+
-   |                                                | 4. `onFinish` callback updates the
-   | (State: floorplanPoints)                       |    `floorplanPoints` state.
-   |                                                |
-   +--&gt; [ Floorplan.js ] --- (passes onFinish) ----&gt; [ FloorplanWorkspace.js ]
-   |      (Renders workspace)                         |
-   |                                                  | 3. User clicks &quot;Finish,&quot;
-   |                                                  |    and workspace calls `onFinish(points)`.
-   |                                                  |
-   +--&gt; [ Configurator.js ] &lt;------------------------+
-        (Receives floorplanPoints as a &quot;prop&quot;)        |
-                                                      | 5. React sees state changed
-                                                      |    and re-renders Configurator
-                                                      |    with the *new* points.
-</code></pre>
-<h3 id="the-step-by-step-flow">The Step-by-Step Flow</h3>
+<h1 id="procedural-crate-generation">Procedural Crate Generation</h1>
+<p>This document outlines the logic for the <code>WrappedCrate</code> class, a dynamic and performant 3D object used to represent a crate or pallet built from individual planks.</p>
+<p>The class is designed for scenarios where a crate needs to be <strong>procedurally resized</strong> (e.g., by a user in a configurator) while maintaining a realistic appearance. It achieves high performance by using <code>THREE.InstancedMesh</code> to draw all planks in a single draw call, rather than creating hundreds of individual <code>THREE.Mesh</code> objects.</p>
+<hr />
+<h2 id="core-logic-snapping-and-rebuilding">Core Logic: Snapping and Rebuilding</h2>
+<p>The most important concept in this class is the "snapping" logic. A user might request an arbitrary size (e.g., 1.23m), but the crate can only be built from discrete plank widths (e.g., 0.1m).</p>
+<p>The <code>setSize</code> method handles this automatically.</p>
 <ol>
-<li>
-<p><strong>Top-Level State:</strong> The main <code>App</code> component holds the most important piece of state: <code>floorplanPoints</code>.</p>
-</li>
-<li>
-<p><strong>Data Down (Props):</strong></p>
-<ul>
-<li>The <code>App</code> component renders the <code>Floorplan</code> component, passing it a function prop called <code>onFinish</code>.</li>
-<li>The <code>App</code> component also renders the <code>Configurator</code> component, passing it the <em>current</em> <code>floorplanPoints</code> array as a prop.</li>
-</ul>
-</li>
-<li>
-<p><strong>Events Up (Callbacks):</strong></p>
-<ul>
-<li>When the user finishes drawing in the <code>FloorplanWorkspace</code>, they click the "Finish" button.</li>
-<li>The workspace calls the <code>onFinish</code> function it received, passing the new array of points (e.g., <code>onFinish([...])</code>).</li>
-</ul>
-</li>
-<li>
-<p><strong>State Update:</strong></p>
-<ul>
-<li>This <code>onFinish</code> function lives in the main <code>App</code> component. When called, it updates the <code>floorplanPoints</code> state inside <code>App</code> with the new points.</li>
-</ul>
-</li>
-<li>
-<p><strong>Automatic Re-render:</strong></p>
-<ul>
-<li>React detects that the <code>floorplanPoints</code> state has changed.</li>
-<li>It automatically re-renders any component that depends on that state. In this case, it re-renders the <code>Configurator</code> component.</li>
-<li>The <code>Configurator</code> now receives the <em>new</em> <code>floorplanPoints</code> as its prop, triggering its internal <code>useEffect</code> hook to discard the old 3D floor and generate a new one.</li>
-</ul>
-</li>
+<li><strong>Snapping:</strong> When <code>setSize(requestedSize)</code> is called, it doesn't immediately use that size. Instead, it calculates the <strong>nearest valid "snapped" size</strong> that can be built using the given <code>plankWidth</code> and <code>gapSize</code>.</li>
+<li><strong>Optimization:</strong> The class stores its current snapped size. It compares the <em>new</em> snapped size to the <em>old</em> one. If they are the same (e.g., the user is dragging their mouse but hasn't moved far enough to add/remove a plank), the function does nothing.</li>
+<li><strong>Rebuild:</strong> If the new snapped size is different, it triggers the internal <code>rebuild()</code> method. This function recalculates the position and scale for every single plank needed to build the 6 faces of the crate.</li>
+<li><strong>Instancing:</strong> The <code>rebuild()</code> method populates the <code>InstancedMesh</code> with the matrix data (position, rotation, scale) for every plank. Finally, it updates the <code>InstancedMesh</code>'s <code>count</code> to render the new set of planks.</li>
 </ol>
-<h3 id="the-bridge-to-threejs-useeffect">The Bridge to <code>three.js</code>: <code>useEffect</code></h3>
-<p>React manages the DOM, but <strong><code>three.js</code></strong> manages a <code>&lt;canvas&gt;</code> element. We use the <strong><code>useEffect</code> hook</strong> as the bridge between these two worlds.</p>
-<p>In the <code>Configurator</code> component, the <code>useEffect</code> hook essentially says: "When the <code>floorplanPoints</code> prop changes, run this code to build (or re-build) the <code>three.js</code> scene."</p>
-<p>This hook is also responsible for <strong>cleanup</strong>. When the component is removed, the <code>useEffect</code>'s return function runs, which safely disposes of all <code>three.js</code> geometries, materials, and the renderer. This prevents memory leaks and is a critical part of mixing React with external libraries.</p>
+<p>This entire process ensures that the crate always looks correct for its parts, and it prevents costly, high-frequency rebuilds while a user is actively resizing the object.</p>
+<hr />
+<h2 id="class-reference">Class Reference</h2>
+<h3 id="wrappedcrate"><code>WrappedCrate</code></h3>
+<p>This class extends <code>THREE.Group</code> and manages the <code>InstancedMesh</code> for all planks.</p>
+<h4 id="constructorinitialsize-plankwidth-plankthickness-material-maxplanks"><code>constructor(initialSize, plankWidth, plankThickness, material, maxPlanks)</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Creates a new <code>WrappedCrate</code> instance.</li>
+<li><strong>Parameters:</strong><ul>
+<li><code>initialSize</code>: <code>THREE.Vector3</code> - The starting dimensions of the crate.</li>
+<li><code>plankWidth</code>: <code>number</code> - The width of each individual plank.</li>
+<li><code>plankThickness</code>: <code>number</code> - The thickness (height) of each plank.</li>
+<li><code>material</code>: <code>THREE.Material</code> - The material to be shared by all plank instances.</li>
+<li><code>maxPlanks</code> (Optional): <code>number</code> - The maximum number of planks to pre-allocate memory for. Defaults to <code>5000</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="setsizerequestedsize"><code>.setSize(requestedSize)</code></h4>
+<ul>
+<li><strong>Purpose:</strong> The main public method for updating the crate's dimensions.</li>
+<li><strong>Parameters:</strong><ul>
+<li><code>requestedSize</code>: <code>THREE.Vector3</code> - The <em>desired</em> target size for the crate.</li>
+</ul>
+</li>
+<li><strong>Behavior:</strong> This method triggers the "Snapping and Rebuilding" logic. The crate's visual size will snap to the nearest valid dimension based on the <code>plankWidth</code>, and the geometry will only be rebuilt if this snapped size changes.</li>
+</ul>
 
 
 
@@ -1106,10 +1095,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "header.autohide", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

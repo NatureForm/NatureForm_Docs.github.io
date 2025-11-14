@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://natureform.github.io/Frontend/Framework/">
+        <link rel="canonical" href="https://natureform.github.io/Frontend/ModelConfigurator/Collision/">
       
       
-        <link rel="prev" href="../FloorplanConfigurator/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../ThreeJS/">
+        <link rel="next" href="../WrappingLogic/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>Framework - NatureForm Documentation</title>
+        <title>Collision - NatureForm Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#framework-why-we-use-react" class="md-skip">
+        <a href="#2d-floorplan-collision-utilities" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="NatureForm Documentation" class="md-header__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
+    <a href="../../.." title="NatureForm Documentation" class="md-header__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Framework
+              Collision
             
           </span>
         </div>
@@ -209,7 +209,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -241,7 +241,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../ModelConfigurator/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   
@@ -264,7 +264,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../ThreeJS/" class="md-tabs__link">
+        <a href="../../../ThreeJS/" class="md-tabs__link">
           
   
   
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../CadToThreeJS/" class="md-tabs__link">
+        <a href="../../../CadToThreeJS/" class="md-tabs__link">
           
   
   
@@ -318,7 +318,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="NatureForm Documentation" class="md-nav__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
+    <a href="../../.." title="NatureForm Documentation" class="md-nav__button md-logo" aria-label="NatureForm Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -336,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -401,6 +401,8 @@
                 
   
   
+    
+  
   
   
     
@@ -411,11 +413,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -431,7 +433,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Model Configurator
@@ -445,112 +447,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../ModelConfigurator/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Overview
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ModelConfigurator/Collision/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Collision
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ModelConfigurator/WrappingLogic/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    WrappingLogic
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ModelConfigurator/SilhouetteExtractor/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Silhouette Extractor
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FloorplanConfigurator/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Floorplan Configurator
     
   </span>
   
@@ -582,7 +484,7 @@
   
   
   <span class="md-ellipsis">
-    Framework
+    Collision
     
   </span>
   
@@ -595,7 +497,7 @@
   
   
   <span class="md-ellipsis">
-    Framework
+    Collision
     
   </span>
   
@@ -618,37 +520,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-react" class="md-nav__link">
+  <a href="#core-logic-issilhouetteinsidefloorspace" class="md-nav__link">
     <span class="md-ellipsis">
-      Why React?
+      Core Logic: isSilhouetteInsideFloorspace
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-all-works-together-data-flow" class="md-nav__link">
+  <a href="#function-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      How It All Works Together: Data Flow
+      Function Reference
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How It All Works Together: Data Flow">
+    <nav class="md-nav" aria-label="Function Reference">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-step-by-step-flow" class="md-nav__link">
+  <a href="#issilhouetteinsidefloorspacesilhouettemesh-floorpolygon" class="md-nav__link">
     <span class="md-ellipsis">
-      The Step-by-Step Flow
+      isSilhouetteInsideFloorspace(silhouetteMesh, floorPolygon)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-bridge-to-threejs-useeffect" class="md-nav__link">
+  <a href="#gettransformedsilhouetteverticessilhouettemesh" class="md-nav__link">
     <span class="md-ellipsis">
-      The Bridge to three.js: useEffect
+      getTransformedSilhouetteVertices(silhouetteMesh)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dolinesintersectp1-p2-p3-p4" class="md-nav__link">
+    <span class="md-ellipsis">
+      doLinesIntersect(p1, p2, p3, p4)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispointinpolygonpoint-polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      isPointInPolygon(point, polygon)
     </span>
   </a>
   
@@ -663,6 +583,106 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WrappingLogic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WrappingLogic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SilhouetteExtractor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Silhouette Extractor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FloorplanConfigurator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Floorplan Configurator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Framework
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -723,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ThreeJS/" class="md-nav__link">
+      <a href="../../../ThreeJS/" class="md-nav__link">
         
   
   
@@ -794,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/" class="md-nav__link">
         
   
   
@@ -817,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/GLB%2BParameters/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/GLB%2BParameters/" class="md-nav__link">
         
   
   
@@ -840,7 +860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/Wrapping/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/Wrapping/" class="md-nav__link">
         
   
   
@@ -863,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CadToThreeJS/FeatureTreeToManifold3d/" class="md-nav__link">
+      <a href="../../../CadToThreeJS/FeatureTreeToManifold3d/" class="md-nav__link">
         
   
   
@@ -913,37 +933,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-react" class="md-nav__link">
+  <a href="#core-logic-issilhouetteinsidefloorspace" class="md-nav__link">
     <span class="md-ellipsis">
-      Why React?
+      Core Logic: isSilhouetteInsideFloorspace
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-all-works-together-data-flow" class="md-nav__link">
+  <a href="#function-reference" class="md-nav__link">
     <span class="md-ellipsis">
-      How It All Works Together: Data Flow
+      Function Reference
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How It All Works Together: Data Flow">
+    <nav class="md-nav" aria-label="Function Reference">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#the-step-by-step-flow" class="md-nav__link">
+  <a href="#issilhouetteinsidefloorspacesilhouettemesh-floorpolygon" class="md-nav__link">
     <span class="md-ellipsis">
-      The Step-by-Step Flow
+      isSilhouetteInsideFloorspace(silhouetteMesh, floorPolygon)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-bridge-to-threejs-useeffect" class="md-nav__link">
+  <a href="#gettransformedsilhouetteverticessilhouettemesh" class="md-nav__link">
     <span class="md-ellipsis">
-      The Bridge to three.js: useEffect
+      getTransformedSilhouetteVertices(silhouetteMesh)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dolinesintersectp1-p2-p3-p4" class="md-nav__link">
+    <span class="md-ellipsis">
+      doLinesIntersect(p1, p2, p3, p4)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ispointinpolygonpoint-polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      isPointInPolygon(point, polygon)
     </span>
   </a>
   
@@ -970,88 +1008,59 @@
 
 
 
-<h1 id="framework-why-we-use-react">Framework: Why We Use React</h1>
-<p>This document provides a high-level overview of why React was chosen as the framework for this application and how its core principles are used to manage our interactive tools.</p>
-<h2 id="why-react">Why React?</h2>
-<p>React is a JavaScript library for building user interfaces. It's particularly well-suited for our project, which involves managing complex, interactive state for both a 2D editor and a 3D configurator.</p>
-<ul>
-<li>
-<p><strong>Component-Based Architecture:</strong> Our entire application is built from small, independent, and reusable "components."</p>
-<ul>
-<li>The <code>Floorplan</code> selector is a component.</li>
-<li>The <code>FloorplanWorkspace</code> editor is another component.</li>
-<li>The <code>Configurator</code> 3D scene is a component.</li>
-<li>Even the UI sliders and buttons are individual components.
-    This makes the code easy to manage, test, and update without one part breaking another.</li>
-</ul>
-</li>
-<li>
-<p><strong>Declarative UI (State Management):</strong> This is the most important concept.</p>
-<ul>
-<li><strong>Traditional (Imperative):</strong> In older code, you'd write step-by-step instructions like: "find the slider," "get its value," "find the 3D model," "update the model's X position." This is complex and error-prone.</li>
-<li><strong>React (Declarative):</strong> We simply <em>declare</em> the state we want. We have a state variable, <code>modelPositionX</code>. The slider's value is <em>bound</em> to this state, and the 3D model's position is <em>derived</em> from this state. When the user moves the slider, it updates the state, and React automatically ensures the 3D model's position updates to match. We just describe the "what" (the model's position should match this variable), and React handles the "how."</li>
-</ul>
-</li>
-<li>
-<p><strong>Rich Ecosystem:</strong> React is the most popular UI library, meaning it has a massive community and integrates well with other libraries. This is crucial for us, as it simplifies the integration of powerful tools like <strong><code>three.js</code></strong> (for 3D graphics) and <strong><code>react-router-dom</code></strong> (for navigation).</p>
-</li>
-</ul>
-<h2 id="how-it-all-works-together-data-flow">How It All Works Together: Data Flow</h2>
-<p>React uses a <strong>one-way data flow</strong>, which makes the application predictable. Data flows "down" from parent components to children, and events (like user clicks) flow "up" via callback functions.</p>
-<p>Here is a simplified diagram of our application's architecture:</p>
-<pre><code>[ App.js ]  &lt;---------------------------------------+
-   |                                                | 4. `onFinish` callback updates the
-   | (State: floorplanPoints)                       |    `floorplanPoints` state.
-   |                                                |
-   +--&gt; [ Floorplan.js ] --- (passes onFinish) ----&gt; [ FloorplanWorkspace.js ]
-   |      (Renders workspace)                         |
-   |                                                  | 3. User clicks &quot;Finish,&quot;
-   |                                                  |    and workspace calls `onFinish(points)`.
-   |                                                  |
-   +--&gt; [ Configurator.js ] &lt;------------------------+
-        (Receives floorplanPoints as a &quot;prop&quot;)        |
-                                                      | 5. React sees state changed
-                                                      |    and re-renders Configurator
-                                                      |    with the *new* points.
-</code></pre>
-<h3 id="the-step-by-step-flow">The Step-by-Step Flow</h3>
+<h1 id="2d-floorplan-collision-utilities">2D Floorplan Collision &amp; Utilities</h1>
+<p>This document outlines the utility functions used for <strong>2D collision and containment checks</strong>. The primary goal of this code is to determine if a 3D object's 2D footprint (its "silhouette") is fully contained within a 2D floorplan polygon.</p>
+<p>This functionality is essential for interactive configurators to validate object placement, preventing users from moving items outside a defined room, placing objects on top of each other, or having them intersect with walls.</p>
+<hr />
+<h2 id="core-logic-issilhouetteinsidefloorspace">Core Logic: <code>isSilhouetteInsideFloorspace</code></h2>
+<p>The main function, <code>isSilhouetteInsideFloorspace</code>, performs a robust, two-part check to confirm an object is fully contained within the floorplan.</p>
+<p>For an object to be considered "inside," <strong>both</strong> of the following conditions must be true:</p>
 <ol>
-<li>
-<p><strong>Top-Level State:</strong> The main <code>App</code> component holds the most important piece of state: <code>floorplanPoints</code>.</p>
-</li>
-<li>
-<p><strong>Data Down (Props):</strong></p>
-<ul>
-<li>The <code>App</code> component renders the <code>Floorplan</code> component, passing it a function prop called <code>onFinish</code>.</li>
-<li>The <code>App</code> component also renders the <code>Configurator</code> component, passing it the <em>current</em> <code>floorplanPoints</code> array as a prop.</li>
-</ul>
-</li>
-<li>
-<p><strong>Events Up (Callbacks):</strong></p>
-<ul>
-<li>When the user finishes drawing in the <code>FloorplanWorkspace</code>, they click the "Finish" button.</li>
-<li>The workspace calls the <code>onFinish</code> function it received, passing the new array of points (e.g., <code>onFinish([...])</code>).</li>
-</ul>
-</li>
-<li>
-<p><strong>State Update:</strong></p>
-<ul>
-<li>This <code>onFinish</code> function lives in the main <code>App</code> component. When called, it updates the <code>floorplanPoints</code> state inside <code>App</code> with the new points.</li>
-</ul>
-</li>
-<li>
-<p><strong>Automatic Re-render:</strong></p>
-<ul>
-<li>React detects that the <code>floorplanPoints</code> state has changed.</li>
-<li>It automatically re-renders any component that depends on that state. In this case, it re-renders the <code>Configurator</code> component.</li>
-<li>The <code>Configurator</code> now receives the <em>new</em> <code>floorplanPoints</code> as its prop, triggering its internal <code>useEffect</code> hook to discard the old 3D floor and generate a new one.</li>
-</ul>
-</li>
+<li><strong>All Points Inside:</strong> Every single vertex of the object's 2D silhouette must be <em>inside</em> the floorplan polygon. This check is performed by the <code>isPointInPolygon</code> helper.</li>
+<li><strong>No Edges Intersect:</strong> No edge (the line between two vertices) of the silhouette can <em>cross</em> any edge of the floorplan polygon. This check is performed by the <code>doLinesIntersect</code> helper.</li>
 </ol>
-<h3 id="the-bridge-to-threejs-useeffect">The Bridge to <code>three.js</code>: <code>useEffect</code></h3>
-<p>React manages the DOM, but <strong><code>three.js</code></strong> manages a <code>&lt;canvas&gt;</code> element. We use the <strong><code>useEffect</code> hook</strong> as the bridge between these two worlds.</p>
-<p>In the <code>Configurator</code> component, the <code>useEffect</code> hook essentially says: "When the <code>floorplanPoints</code> prop changes, run this code to build (or re-build) the <code>three.js</code> scene."</p>
-<p>This hook is also responsible for <strong>cleanup</strong>. When the component is removed, the <code>useEffect</code>'s return function runs, which safely disposes of all <code>three.js</code> geometries, materials, and the renderer. This prevents memory leaks and is a critical part of mixing React with external libraries.</p>
+<p>This dual-check system is crucial. It correctly handles complex cases, such as a large "U" shaped object attempting to wrap around a small part of the floorplan, which might have its vertices inside but its edges intersecting.</p>
+<hr />
+<h2 id="function-reference">Function Reference</h2>
+<h3 id="issilhouetteinsidefloorspacesilhouettemesh-floorpolygon"><code>isSilhouetteInsideFloorspace(silhouetteMesh, floorPolygon)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> The primary function. Checks if a given silhouette mesh is fully contained within a floorplan polygon.</li>
+<li><strong>Parameters:</strong><ul>
+<li><code>silhouetteMesh</code>: The <code>THREE.Mesh</code> representing the object's 2D footprint.</li>
+<li><code>floorPolygon</code>: An array of 2D points (e.g., <code>{x: 10, y: 5}</code>) defining the floor's boundary.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> <code>true</code> if the silhouette is fully inside, <code>false</code> otherwise.</li>
+</ul>
+<h3 id="gettransformedsilhouetteverticessilhouettemesh"><code>getTransformedSilhouetteVertices(silhouetteMesh)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> Extracts a 2D vertex list (a polygon) from a 3D silhouette mesh.</li>
+<li><strong>Process:</strong><ol>
+<li>Ensures the mesh's world matrix is up-to-date.</li>
+<li>Reads the vertex <code>position</code> data from the mesh's geometry.</li>
+<li>Applies the mesh's <code>matrixWorld</code> (its final world position, rotation, and scale) to every vertex.</li>
+<li>Converts the 3D <code>(x, y, z)</code> coordinates into 2D <code>(x, y)</code> coordinates by <strong>using the <code>x</code> and <code>z</code> values</strong> (the top-down footprint).</li>
+<li>De-duplicates the vertices to create a clean polygon.</li>
+</ol>
+</li>
+<li><strong>Returns:</strong> An array of unique 2D points (e.g., <code>[{x: 1, y: 1}, {x: 2, y: 1}, ...]</code>).</li>
+</ul>
+<h3 id="dolinesintersectp1-p2-p3-p4"><code>doLinesIntersect(p1, p2, p3, p4)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> A mathematical helper to check if two 2D line segments, (p1, p2) and (p3, p4), intersect.</li>
+<li><strong>Algorithm:</strong> Uses a standard computational geometry algorithm based on the <strong>orientation</strong> (clockwise, counter-clockwise, or collinear) of the three-point combinations.</li>
+<li><strong>Returns:</strong> <code>true</code> if the segments cross, <code>false</code> otherwise.</li>
+</ul>
+<h3 id="ispointinpolygonpoint-polygon"><code>isPointInPolygon(point, polygon)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> A mathematical helper to check if a 2D point is inside a 2D polygon.</li>
+<li><strong>Algorithm:</strong> Implements the <strong>Ray-Casting Algorithm</strong>. It "casts" an imaginary ray from the point in one direction (e.g., positive X) and counts how many times it crosses the polygon's edges.<ul>
+<li>An <strong>odd</strong> number of crossings means the point is <strong>inside</strong>.</li>
+<li>An <strong>even</strong> number of crossings means the point is <strong>outside</strong>.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> <code>true</code> if the point is inside, <code>false</code> otherwise.</li>
+</ul>
 
 
 
@@ -1106,10 +1115,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "header.autohide", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.top", "header.autohide", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
