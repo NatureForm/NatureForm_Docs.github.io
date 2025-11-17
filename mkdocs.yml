@@ -31,7 +31,7 @@ theme:
         name: Switch to dark mode
 
 nav:
-  - 'Home': 'Home.md'
+  - 'Home': 'index.md'
   - 'Frontend':
     - 'Model Configurator':
       - 'Overview': 'Frontend/ModelConfigurator/index.md'
@@ -52,5 +52,5 @@ nav:
   - 'Marktstrategie & Analyse': 
     - 'Marktstrategie & Analyse': 'Marktstrategie & Analyse/Marktanalyse.md'
     - 'Kundenbedeurfnisse': 'Marktstrategie & Analyse/Kundenbeduerfnisse.md'
-    - 'Konkurrenzanalyze': 'Marktstrategie & Analyse/Konkurrenzanalyze'
-    - 'Zielgruppe': 'Marktstrategie & Analyse/Zielgruppe'
+    - 'Konkurrenzanalyze': 'Marktstrategie & Analyse/Konkurrenzanalyze.md'
+    - 'Zielgruppe': 'Marktstrategie & Analyse/Zielgruppe.md'
