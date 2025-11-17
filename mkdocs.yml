@@ -7,7 +7,7 @@ theme:
     - navigation.tabs
 
 nav:
-  - 'Home': 'index.md'
+  - 'Home': 'Home.md'
   - 'Frontend':
     - '2D Physics': 'Frontend/2dPhysics.md'
     - 'Floorplan Configurator': 'Frontend/FloorplanConfigurator.md'
@@ -15,3 +15,10 @@ nav:
     - 'Model Configurator': 'Frontend/ModelConfigurator.md'
     - 'Silhouette Extractor': 'Frontend/SilhouetteExtractor.md'
     - 'Three.js': 'Frontend/ThreeJS.md'
+  - 'Fertigung':
+    - 'Maschinen': 'Fertigung/Maschinenvergleich.md'
+  - 'Marktstrategie & Analyse': 
+    - 'Marktstrategie & Analyse': 'Marktstrategie & Analyse/Marktanalyse.md'
+    - 'Kundenbedeurfnisse': 'Marktstrategie & Analyse/Kundenbeduerfnisse.md'
+    - 'Konkurrenzanalyze': 'Marktstrategie & Analyse/Konkurrenzanalyze'
+    - 'Zielgruppe': 'Marktstrategie & Analyse/Zielgruppe'
