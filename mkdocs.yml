@@ -1,5 +1,5 @@
 site_name: 'NatureForm Documentation'
-site_url: 'https://natureform.github.io/NatureForm_Docs.github.io/' 
+site_url: 'https://natureform.github.io' 
 
 theme:
   name: material
