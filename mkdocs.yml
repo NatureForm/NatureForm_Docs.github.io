@@ -2,12 +2,12 @@ site_name: 'NatureForm Documentation'
 site_url: 'https://natureform.github.io/NatureForm_Docs.github.io/' 
 
 theme:
-  name: material
+  name: mkdocs
   features:
     - navigation.tabs
 
 nav:
-  - 'Home': 'Home.md'
+  - 'Home': 'home.md'
   - 'Frontend':
     - '2D Physics': 'Frontend/2dPhysics.md'
     - 'Floorplan Configurator': 'Frontend/FloorplanConfigurator.md'
@@ -17,6 +17,7 @@ nav:
     - 'Three.js': 'Frontend/ThreeJS.md'
   - 'Fertigung':
     - 'Maschinen': 'Fertigung/Maschinenvergleich.md'
+    - 'Fertigung': 'Fertigung/Fertigung.md'
   - 'Marktstrategie & Analyse': 
     - 'Marktstrategie & Analyse': 'Marktstrategie & Analyse/Marktanalyse.md'
     - 'Kundenbedeurfnisse': 'Marktstrategie & Analyse/Kundenbeduerfnisse.md'

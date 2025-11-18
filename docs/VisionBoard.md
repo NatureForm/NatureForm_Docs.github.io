@@ -1,15 +1,15 @@
-# Vision Board – Inspirationsprojekte für Balkonmöbel
+# Vision Board – InspirationsBeispiele für Balkonmöbel
 
-Dieses Dokument sammelt inspirierende Projekte, die als Grundlage oder Motivation für die Entwicklung eigener Balkonmöbel dienen können.  
-Jedes Projekt wird mit Link, kurzer Beschreibung, Bewertung (gut/schlecht) und möglichen Anpassungen für die eigene Umsetzung dokumentiert.
+Dieses Dokument sammelt inspirierende Beispiele, die als Grundlage oder Motivation für die Entwicklung eigener Balkonmöbel dienen können.  
+Jedes Beispiel wird mit Link, kurzer Beschreibung, Bewertung (gut/schlecht) und möglichen Anpassungen für die eigene Umsetzung dokumentiert.
 
 ---
 
-## Projekt 1: 3D-Assets
+## Beispiel 1: 3D-Assets
 **Link:** https://boytchev.github.io/3d-assets/
 
 **Beschreibung:**  
-Dieses Projekt lässt verschiedene Projekte über Parameter geometrisch modifizieren
+Dieses Beispiel lässt verschiedene Beispiele über Parameter geometrisch modifizieren
 
  <video controls src="boytchev.github.io_3d-assets_online_bookshelf.html - Google Chrome 2025-09-02 23-15-39.mp4" title="Title"></video>
  
@@ -27,7 +27,7 @@ Dieses Projekt lässt verschiedene Projekte über Parameter geometrisch modifizi
 - Evtl. Verbindung mit einer Datenbank für Maße und Preise. 
 ---
 
-## Projekt 2: csg-house
+## Beispiel 2: csg-house
 **Link:** https://codesandbox.io/p/sandbox/csg-house-y52tmt  
 **Beschreibung:**  
 Ein Modell eines Hauses, an dem sich Fenster und Türen verschieben lassen könngen inkl. des Sourcecodes 
@@ -49,7 +49,7 @@ Ein Modell eines Hauses, an dem sich Fenster und Türen verschieben lassen könn
 
 ---
 
-## Projekt 3: bang-olufsen Konfigurator
+## Beispiel 3: bang-olufsen Konfigurator
 **Link:** https://www.bang-olufsen.com/de/int/composer?page=productselection
 
 **Beschreibung:**  
@@ -69,7 +69,7 @@ Konfigurator für Lautsprecher von bang-olufsen als Beispiel für eine gelugene 
 
 ---
 
-## Projekt 4: hulo Tischkonfigurator
+## Beispiel 4: hulo Tischkonfigurator
 **Link:** https://hulo.be/configurator/
 
 **Beschreibung:**  
@@ -94,7 +94,7 @@ Hier wird das vorgehen von einem Developer dieses Konfigurators beschrieben: [di
 
 ---
 
-## Projekt 5: IKEA Home Planner
+## Beispiel 5: IKEA Home Planner
 **Link:** https://www.ikea.com/de/de/planner/  
 
 ![alt text](image-2.png)
