@@ -12,7 +12,7 @@ Zusätzlich sollen Daten über eine eigene Umfrage gesammelt werden, um die Anna
   Welche Anforderungen und Wünsche haben Kund:innen an individuelle Balkonmöbel?  
   (z. B. Preis, Materialqualität, einfache Montage, Nachhaltigkeit, Lieferzeit)
 
-- [📊 Konkurrenzanalyse](./Konkurrenzanalyse.md)  
+- [📊 Konkurrenzanalyse](./Konkurrenzanalyse/Ikea.md)  
   Welche Anbieter und Produkte gibt es bereits am Markt?  
   Welche Stärken und Schwächen zeigen diese im Vergleich zum geplanten Konzept?
 
