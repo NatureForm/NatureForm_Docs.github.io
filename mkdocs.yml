@@ -42,6 +42,7 @@ nav:
     - 'Framework': 'Frontend/Framework.md'
   - 'ThreeJS':
     - "Overview": 'ThreeJS/index.md'
+    - "ThreeJS Backend": 'ThreeJS/ThreeJS Backend.md'
   - 'Cad to ThreeJS':
     - 'Overview': 'CadToThreeJS/index.md'
     - 'GLB + Parameters': 'CadToThreeJS/GLB+Parameters.md'
