@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://natureform.github.io/Frontend/FloorplanConfigurator/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Floorplan Configurator - NatureForm Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">NatureForm Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Frontend</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Model Configurator</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../ModelConfigurator/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../ModelConfigurator/Collision/" class="dropdown-item">Collision</a>
+</li>
+            
+<li>
+    <a href="../ModelConfigurator/WrappingLogic/" class="dropdown-item">WrappingLogic</a>
+</li>
+            
+<li>
+    <a href="../ModelConfigurator/SilhouetteExtractor/" class="dropdown-item">Silhouette Extractor</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Floorplan Configurator</a>
+</li>
+                                    
+<li>
+    <a href="../Framework/" class="dropdown-item">Framework</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../ThreeJS/ThreeJS%20Backend/" class="dropdown-item">ThreeJS Backend</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cad to ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../CadToThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../CadToThreeJS/GLB%2BParameters/" class="dropdown-item">GLB + Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../../CadToThreeJS/Wrapping/" class="dropdown-item">Object Wrapping</a>
+</li>
+                                    
+<li>
+    <a href="../../CadToThreeJS/FeatureTreeToManifold3d/" class="dropdown-item">Feature Tree Transpiling</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Fertigung</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Maschinenvergleich/" class="dropdown-item">Maschinen</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marktstrategie & Analyse</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Marktanalyse/" class="dropdown-item">Marktstrategie & Analyse</a>
+</li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Kundenbeduerfnisse/" class="dropdown-item">Kundenbedeurfnisse</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Konkurrenzanalyse</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Konkurrenzanalyse/Ikea/" class="dropdown-item">Ikea</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Zielgruppe/" class="dropdown-item">Zielgruppe</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../ModelConfigurator/SilhouetteExtractor/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Framework/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#floorplan-editor" class="nav-link">Floorplan Editor</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#user-workflow" class="nav-link">User Workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#key-features-capabilities" class="nav-link">Key Features &amp; Capabilities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#technical-implementation-highlights" class="nav-link">Technical Implementation Highlights</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="floorplan-editor">Floorplan Editor</h1>
+<h2 id="overview">Overview</h2>
+<p>The Floorplan feature is an interactive, two-part tool that allows users to create a custom 2D room layout. It's designed to be simple and intuitive, starting users with a basic template and then providing a powerful editor to refine their shape.</p>
+<p>The entire system is built as a <strong>fully vector-based</strong> editor, ensuring that shapes can be scaled and manipulated with perfect precision, free from any pixelation.</p>
+<h2 id="user-workflow">User Workflow</h2>
+<p>The user experience is broken into two distinct stages:</p>
+<ol>
+<li>
+<p><strong>1. Shape Selection:</strong> The user is first presented with a grid of common room "primitives" or templates, such as a simple square, a rectangle, or an L-shaped room.</p>
+</li>
+<li>
+<p><strong>2. Interactive Editing:</strong> After selecting a template, the user is taken into the <strong>Floorplan Workspace</strong>. This is an infinite canvas where they can pan, zoom, and directly manipulate the shape to match their exact specifications.</p>
+</li>
+</ol>
+<p>Once finished, the user can save their design, which finalizes the shape's vertex data.</p>
+<h2 id="key-features-capabilities">Key Features &amp; Capabilities</h2>
+<p>The workspace provides a rich set of editing tools:</p>
+<ul>
+<li>
+<p><strong>View Navigation:</strong></p>
+<ul>
+<li><strong>Pan:</strong> Users can click and drag the grid background to pan the viewport.</li>
+<li><strong>Zoom:</strong> Using the mouse wheel, users can zoom in and out, with the zoom centered on the cursor for intuitive control.</li>
+</ul>
+</li>
+<li>
+<p><strong>Shape Manipulation:</strong></p>
+<ul>
+<li><strong>Move Vertices:</strong> Users can grab any corner (vertex) of the shape and drag it.</li>
+<li><strong>Move Edges:</strong> Users can grab any wall (edge) and move it, which repositions the two connected vertices along that wall's normal.</li>
+<li><strong>Add Vertices:</strong> By clicking and dragging a special handle at the midpoint of any wall, users can "pull out" a new corner, splitting one wall into two.</li>
+</ul>
+</li>
+<li>
+<p><strong>Precision and Alignment:</strong></p>
+<ul>
+<li><strong>Precise Length Input:</strong> The length of each wall is displayed as a text label. Users can click this label to type in an exact numerical length for that wall.</li>
+<li><strong>Grid Snapping:</strong> All drag operations (for vertices, edges, or new points) automatically snap to a background grid, ensuring clean lines and easy alignment.</li>
+</ul>
+</li>
+</ul>
+<h2 id="technical-implementation-highlights">Technical Implementation Highlights</h2>
+<p>Instead of being a pixel-based (raster) editor like MS Paint, the floorplan tool is a <strong>vector graphics editor</strong> built using <strong>SVG</strong> (Scalable Vector Graphics).</p>
+<ul>
+<li>
+<p><strong>Vector-Based by Design:</strong> The room's shape is not stored as pixels. It's stored in React state as a simple <strong>array of vertices</strong> (e.g., <code>[{x: 10, y: 10}, {x: 100, y: 10}, ...]</code>). The SVG <code>&lt;polygon&gt;</code> element renders this data visually.</p>
+</li>
+<li>
+<p><strong>Benefits of SVG:</strong></p>
+<ul>
+<li><strong>Infinite Scalability:</strong> The shape, grid, and handles can be zoomed in on indefinitely without any loss of quality or pixelation.</li>
+<li><strong>Object-Based Interaction:</strong> Every part of the shape (the main polygon, the circular vertex handles, the edge midpoint handles) is its own SVG element. This makes it simple to attach specific event listeners (like <code>onMouseDown</code>) to each part.</li>
+</ul>
+</li>
+<li>
+<p><strong>State-Driven Rendering:</strong> All interactions are handled by React. When a user drags a vertex, they are simply updating the <code>points</code> array in the component's state. React then re-renders the SVG with the new vertex coordinates, making the editing feel instantaneous.</p>
+</li>
+<li>
+<p><strong>Coordinate Space Transformation:</strong> A key piece of the logic is the set of helper functions that translate coordinates. When a user clicks, the editor must translate that <strong>screen-space</strong> (pixel) coordinate into the <strong>local-space</strong> (vector) coordinate of the shape, accounting for the current pan and zoom level. This allows a user's mouse movement to be correctly applied to the shape's data.</p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

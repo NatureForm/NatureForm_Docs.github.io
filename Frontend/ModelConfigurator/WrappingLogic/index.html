@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://natureform.github.io/Frontend/ModelConfigurator/WrappingLogic/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>WrappingLogic - NatureForm Documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">NatureForm Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Frontend</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Model Configurator</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../Collision/" class="dropdown-item">Collision</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">WrappingLogic</a>
+</li>
+            
+<li>
+    <a href="../SilhouetteExtractor/" class="dropdown-item">Silhouette Extractor</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../FloorplanConfigurator/" class="dropdown-item">Floorplan Configurator</a>
+</li>
+                                    
+<li>
+    <a href="../../Framework/" class="dropdown-item">Framework</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ThreeJS/ThreeJS%20Backend/" class="dropdown-item">ThreeJS Backend</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cad to ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../CadToThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../CadToThreeJS/GLB%2BParameters/" class="dropdown-item">GLB + Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../../../CadToThreeJS/Wrapping/" class="dropdown-item">Object Wrapping</a>
+</li>
+                                    
+<li>
+    <a href="../../../CadToThreeJS/FeatureTreeToManifold3d/" class="dropdown-item">Feature Tree Transpiling</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Fertigung</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../Fertigung/Maschinenvergleich/" class="dropdown-item">Maschinen</a>
+</li>
+                                    
+<li>
+    <a href="../../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marktstrategie & Analyse</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Marktanalyse/" class="dropdown-item">Marktstrategie & Analyse</a>
+</li>
+                                    
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Kundenbeduerfnisse/" class="dropdown-item">Kundenbedeurfnisse</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Konkurrenzanalyse</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Konkurrenzanalyse/Ikea/" class="dropdown-item">Ikea</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Zielgruppe/" class="dropdown-item">Zielgruppe</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Collision/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../SilhouetteExtractor/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#procedural-crate-generation" class="nav-link">Procedural Crate Generation</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#core-logic-snapping-and-rebuilding" class="nav-link">Core Logic: Snapping and Rebuilding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#class-reference" class="nav-link">Class Reference</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="procedural-crate-generation">Procedural Crate Generation</h1>
+<p>This document outlines the logic for the <code>WrappedCrate</code> class, a dynamic and performant 3D object used to represent a crate or pallet built from individual planks.</p>
+<p>The class is designed for scenarios where a crate needs to be <strong>procedurally resized</strong> (e.g., by a user in a configurator) while maintaining a realistic appearance. It achieves high performance by using <code>THREE.InstancedMesh</code> to draw all planks in a single draw call, rather than creating hundreds of individual <code>THREE.Mesh</code> objects.</p>
+<hr />
+<h2 id="core-logic-snapping-and-rebuilding">Core Logic: Snapping and Rebuilding</h2>
+<p>The most important concept in this class is the "snapping" logic. A user might request an arbitrary size (e.g., 1.23m), but the crate can only be built from discrete plank widths (e.g., 0.1m).</p>
+<p>The <code>setSize</code> method handles this automatically.</p>
+<ol>
+<li><strong>Snapping:</strong> When <code>setSize(requestedSize)</code> is called, it doesn't immediately use that size. Instead, it calculates the <strong>nearest valid "snapped" size</strong> that can be built using the given <code>plankWidth</code> and <code>gapSize</code>.</li>
+<li><strong>Optimization:</strong> The class stores its current snapped size. It compares the <em>new</em> snapped size to the <em>old</em> one. If they are the same (e.g., the user is dragging their mouse but hasn't moved far enough to add/remove a plank), the function does nothing.</li>
+<li><strong>Rebuild:</strong> If the new snapped size is different, it triggers the internal <code>rebuild()</code> method. This function recalculates the position and scale for every single plank needed to build the 6 faces of the crate.</li>
+<li><strong>Instancing:</strong> The <code>rebuild()</code> method populates the <code>InstancedMesh</code> with the matrix data (position, rotation, scale) for every plank. Finally, it updates the <code>InstancedMesh</code>'s <code>count</code> to render the new set of planks.</li>
+</ol>
+<p>This entire process ensures that the crate always looks correct for its parts, and it prevents costly, high-frequency rebuilds while a user is actively resizing the object.</p>
+<hr />
+<h2 id="class-reference">Class Reference</h2>
+<h3 id="wrappedcrate"><code>WrappedCrate</code></h3>
+<p>This class extends <code>THREE.Group</code> and manages the <code>InstancedMesh</code> for all planks.</p>
+<h4 id="constructorinitialsize-plankwidth-plankthickness-material-maxplanks"><code>constructor(initialSize, plankWidth, plankThickness, material, maxPlanks)</code></h4>
+<ul>
+<li><strong>Purpose:</strong> Creates a new <code>WrappedCrate</code> instance.</li>
+<li><strong>Parameters:</strong><ul>
+<li><code>initialSize</code>: <code>THREE.Vector3</code> - The starting dimensions of the crate.</li>
+<li><code>plankWidth</code>: <code>number</code> - The width of each individual plank.</li>
+<li><code>plankThickness</code>: <code>number</code> - The thickness (height) of each plank.</li>
+<li><code>material</code>: <code>THREE.Material</code> - The material to be shared by all plank instances.</li>
+<li><code>maxPlanks</code> (Optional): <code>number</code> - The maximum number of planks to pre-allocate memory for. Defaults to <code>5000</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id="setsizerequestedsize"><code>.setSize(requestedSize)</code></h4>
+<ul>
+<li><strong>Purpose:</strong> The main public method for updating the crate's dimensions.</li>
+<li><strong>Parameters:</strong><ul>
+<li><code>requestedSize</code>: <code>THREE.Vector3</code> - The <em>desired</em> target size for the crate.</li>
+</ul>
+</li>
+<li><strong>Behavior:</strong> This method triggers the "Snapping and Rebuilding" logic. The crate's visual size will snap to the nearest valid dimension based on the <code>plankWidth</code>, and the geometry will only be rebuilt if this snapped size changes.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

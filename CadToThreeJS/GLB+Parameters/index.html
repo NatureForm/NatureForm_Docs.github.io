@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://natureform.github.io/CadToThreeJS/GLB%2BParameters/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>GLB + Parameters - NatureForm Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">NatureForm Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Frontend</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Model Configurator</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/Collision/" class="dropdown-item">Collision</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/WrappingLogic/" class="dropdown-item">WrappingLogic</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/SilhouetteExtractor/" class="dropdown-item">Silhouette Extractor</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../Frontend/FloorplanConfigurator/" class="dropdown-item">Floorplan Configurator</a>
+</li>
+                                    
+<li>
+    <a href="../../Frontend/Framework/" class="dropdown-item">Framework</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../ThreeJS/ThreeJS%20Backend/" class="dropdown-item">ThreeJS Backend</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cad to ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">GLB + Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../Wrapping/" class="dropdown-item">Object Wrapping</a>
+</li>
+                                    
+<li>
+    <a href="../FeatureTreeToManifold3d/" class="dropdown-item">Feature Tree Transpiling</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Fertigung</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Maschinenvergleich/" class="dropdown-item">Maschinen</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marktstrategie & Analyse</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Marktanalyse/" class="dropdown-item">Marktstrategie & Analyse</a>
+</li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Kundenbeduerfnisse/" class="dropdown-item">Kundenbedeurfnisse</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Konkurrenzanalyse</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Konkurrenzanalyse/Ikea/" class="dropdown-item">Ikea</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Zielgruppe/" class="dropdown-item">Zielgruppe</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Wrapping/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#the-gltf-json-parametric-theory-and-why-its-a-dead-end" class="nav-link">The "glTF + JSON" Parametric Theory (And Why It's a Dead End)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#the-dream-workflow-how-it-should-work" class="nav-link">The "Dream" Workflow: How It Should Work</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#the-dead-end-why-this-fails" class="nav-link">The Dead End: Why This Fails</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="the-gltf-json-parametric-theory-and-why-its-a-dead-end">The "glTF + JSON" Parametric Theory (And Why It's a Dead End)</h1>
+<p>This document outlines the common theoretical approach for creating a web-based CAD configurator by mapping a JSON parameter file to a static <code>glTF</code>/<code>glb</code> model. It then explains the fundamental reasons why this method fails in practice.</p>
+<hr />
+<h2 id="the-dream-workflow-how-it-should-work">The "Dream" Workflow: How It <em>Should</em> Work</h2>
+<p>The idea is to decouple the <em>logic</em> (parameters) from the <em>geometry</em> (the mesh), which seems clean and efficient.</p>
+<p>The theoretical process would look like this:</p>
+<ol>
+<li>
+<p><strong>Export from CAD:</strong></p>
+<ul>
+<li><strong><code>model.glb</code>:</strong> The base 3D geometry. This is the visual "mesh" of the model.</li>
+<li><strong><code>params.json</code>:</strong> A custom-exported file containing all parameters and rules (e.g., <code>{"width": 100, "height": 200, "hole_count": 3}</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Load in Three.js:</strong></p>
+<ul>
+<li>The <code>GLTFLoader</code> loads the <code>model.glb</code> and creates a standard <code>THREE.Mesh</code> with a <code>BufferGeometry</code>.</li>
+<li>A <code>fetch</code> request loads the <code>params.json</code> into a JavaScript object.</li>
+</ul>
+</li>
+<li>
+<p><strong>The "Magic" Mapping:</strong></p>
+<ul>
+<li>This is the core assumption. The theory assumes you can find a <strong>stable link</strong> between the parameters and the geometry.</li>
+<li>For example, your code would <em>know</em> that the parameter <code>"width"</code> corresponds to a specific group of vertices on the side of the mesh.</li>
+</ul>
+</li>
+<li>
+<p><strong>Execute Parameter Change:</strong></p>
+<ul>
+<li>A user moves a slider, changing <code>"width"</code> from 100 to 110.</li>
+<li>Your JavaScript code would:<ol>
+<li>Get all vertices "tagged" with <code>"width"</code>.</li>
+<li>Loop through them and update their X-position in the <code>geometry.attributes.position</code> buffer (e.g., <code>vertex.x += 10</code>).</li>
+<li>Call <code>geometry.attributes.position.needsUpdate = true</code> to tell Three.js to re-draw the modified shape.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>The Core Assumption:</strong> This entire process hinges on the belief that changing a parameter is a simple <strong>translation</strong> (moving) of existing vertices, and that those vertices can be reliably identified.</p>
+</blockquote>
+<hr />
+<h2 id="the-dead-end-why-this-fails">The Dead End: Why This Fails</h2>
+<p>This "modify-in-place" approach fails because a CAD model's geometry is far more complex than a simple "bag of vertices." The relationship between parameters and geometry is <strong>not</strong> a simple 1-to-1 mapping.</p>
+<h3 id="1-the-dumb-mesh-problem">1. The "Dumb Mesh" Problem</h3>
+<p>A <code>glTF</code> or <code>glb</code> file is a "dumb" mesh format. It is an <em>optimized</em> and "flattened" list of triangles. It has <strong>no concept</strong> of:
+* Faces
+* Edges
+* Holes
+* Fillets
+* Or "width"</p>
+<p>It only contains a giant array of <code>(x, y, z)</code> coordinates for its vertices. When you export from Inventor, all the "intelligence" that defined the part is <strong>completely discarded</strong>.</p>
+<h3 id="2-the-topological-naming-problem">2. The Topological Naming Problem</h3>
+<p>This is the most critical failure point. Even if you <em>could</em> "tag" vertices in your CAD program (e.g., "Vertex #501" = "part_of_width_face"), this information is <strong>lost during export</strong>.</p>
+<ul>
+<li>CAD programs perform <strong>mesh optimization</strong> when exporting.</li>
+<li>Vertices are merged (e.g., if two edges meet, their shared vertices become one).</li>
+<li>The entire vertex buffer is re-indexed.</li>
+</ul>
+<p>The "Vertex #501" in your Inventor file might become "Vertex #1204" in the <code>.glb</code> file, or it might be optimized away entirely. The link is broken instantly.</p>
+<h3 id="3-the-non-linear-problem-the-real-killer">3. The "Non-Linear" Problem (The Real Killer)</h3>
+<p>This is the fatal flaw in the theory. Changing a parameter is <strong>not a simple translation</strong> of vertices.</p>
+<p>Changing a parameter causes the CAD software to <strong>re-calculate the entire model's topology</strong>.</p>
+<p>Consider these examples:
+* <strong>A Simple Fillet (Rounded Edge):</strong> You increase the <code>width</code> of a box. The flat face's vertices <em>do</em> just move. But the fillet that connects it to the top face must be <strong>completely re-calculated</strong>. The old fillet's vertices are <em>deleted</em>, and a new set of vertices with a new curve is <em>created</em>.
+* <strong>A Pattern Feature:</strong> Your model has a <code>hole_count</code> parameter. Changing it from <code>3</code> to <code>4</code> doesn't <em>move</em> anything. It <strong>creates new geometry</strong> (a new cylinder to cut) and <strong>adds new vertices</strong> to the mesh.
+* <strong>A Boolean Feature:</strong> You decrease the <code>width</code> of a part. The new width is now <em>smaller</em> than a hole that was cut into it. The CAD program's logic says "this hole feature no longer touches the part," so the feature is suppressed. The hole (and all its vertices) <strong>disappears entirely</strong>.</p>
+<p>The vertex count, face count, and triangle order are <strong>not stable</strong>. They change <em>dramatically</em> with almost every parameter update.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

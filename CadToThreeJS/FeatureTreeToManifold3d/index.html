@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://natureform.github.io/CadToThreeJS/FeatureTreeToManifold3d/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Feature Tree Transpiling - NatureForm Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">NatureForm Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Frontend</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Model Configurator</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/Collision/" class="dropdown-item">Collision</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/WrappingLogic/" class="dropdown-item">WrappingLogic</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/SilhouetteExtractor/" class="dropdown-item">Silhouette Extractor</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../Frontend/FloorplanConfigurator/" class="dropdown-item">Floorplan Configurator</a>
+</li>
+                                    
+<li>
+    <a href="../../Frontend/Framework/" class="dropdown-item">Framework</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../ThreeJS/ThreeJS%20Backend/" class="dropdown-item">ThreeJS Backend</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cad to ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../GLB%2BParameters/" class="dropdown-item">GLB + Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../Wrapping/" class="dropdown-item">Object Wrapping</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Feature Tree Transpiling</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Fertigung</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Maschinenvergleich/" class="dropdown-item">Maschinen</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marktstrategie & Analyse</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Marktanalyse/" class="dropdown-item">Marktstrategie & Analyse</a>
+</li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Kundenbeduerfnisse/" class="dropdown-item">Kundenbedeurfnisse</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Konkurrenzanalyse</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Konkurrenzanalyse/Ikea/" class="dropdown-item">Ikea</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Zielgruppe/" class="dropdown-item">Zielgruppe</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Wrapping/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../Fertigung/Fertigung/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            
+            
+            
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="the-transpiler-architecture-a-viable-path-for-parametric-cad">The "Transpiler" Architecture: A Viable Path for Parametric CAD</h3>
+<p>This document explains the "Compiler/Transpiler" model for creating a parametric 3D web application. This is the correct, robust, and scalable alternative to the "glTF + JSON" approach.</p>
+<p>Instead of modifying existing geometry, this architecture <strong>rebuilds the entire 3D model from scratch</strong> on every parameter change. This is made possible by a fast, client-side geometry kernel.</p>
+<hr />
+<h3 id="1-the-core-concept-a-compiler-pipeline">1. The Core Concept: A Compiler Pipeline</h3>
+<p>Think of this entire system as a compiler, which has three distinct parts. This analogy is the key to understanding the workflow.</p>
+<ol>
+<li>
+<p><strong>The Frontend (The CAD Plugin):</strong></p>
+<ul>
+<li><strong>What it is:</strong> A custom plugin you write for your "source" CAD software (e.g., Inventor, SolidWorks).</li>
+<li><strong>Job:</strong> To "parse" the proprietary, native feature tree and translate it into a universal, intermediate language.</li>
+</ul>
+</li>
+<li>
+<p><strong>The Intermediate Representation (IR):</strong></p>
+<ul>
+<li><strong>What it is:</strong> Your custom <strong>"JSON Contract"</strong> or "Feature Tree."</li>
+<li><strong>Job:</strong> To represent the <em>design intent</em> (the step-by-step recipe) in a simple, standardized, text-based format. This is your "Abstract Syntax Tree" (AST).</li>
+</ul>
+</li>
+<li>
+<p><strong>The Backend (The Web App):</strong></p>
+<ul>
+<li><strong>What it is:</strong> Your JavaScript/TypeScript code running in the browser.</li>
+<li><strong>Job:</strong> To "compile" or "interpret" the JSON (the IR) into "machine code"—a series of low-level commands that a geometry kernel can execute.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="2-the-core-components-in-detail">2. The Core Components in Detail</h3>
+<h4 id="component-a-the-json-recipe-the-intermediate-representation">Component A: The JSON "Recipe" (The Intermediate Representation)</h4>
+<p>This is the file you custom-export from your CAD software. It is <strong>not</strong> just a list of parameters. It is a <strong>step-by-step history of operations</strong> that reference those parameters.</p>
+<p><strong>Example <code>recipe.json</code>:</strong></p>
+<pre><code class="language-json">{
+  &quot;parameters&quot;: {
+    &quot;width&quot;: 100,
+    &quot;length&quot;: 150,
+    &quot;thickness&quot;: 20,
+    &quot;hole_diam&quot;: 15
+  },
+  &quot;history&quot;: [
+    {
+      &quot;id&quot;: &quot;base_sketch&quot;,
+      &quot;type&quot;: &quot;SKETCH_2D&quot;,
+      &quot;plane&quot;: &quot;XY&quot;,
+      &quot;shapes&quot;: [
+        { &quot;type&quot;: &quot;rect&quot;, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;w&quot;: &quot;width&quot;, &quot;h&quot;: &quot;length&quot; }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;base_solid&quot;,
+      &quot;type&quot;: &quot;EXTRUDE&quot;,
+      &quot;target&quot;: &quot;base_sketch&quot;,
+      &quot;depth&quot;: &quot;thickness&quot;
+    },
+    {
+      &quot;id&quot;: &quot;hole_cutout&quot;,
+      &quot;type&quot;: &quot;CYLINDER&quot;,
+      &quot;radius&quot;: &quot;hole_diam / 2&quot;,
+      &quot;height&quot;: &quot;thickness + 10&quot;,
+      &quot;position&quot;: [&quot;width / 2&quot;, &quot;length / 2&quot;, 0]
+    },
+    {
+      &quot;id&quot;: &quot;final_part&quot;,
+      &quot;type&quot;: &quot;BOOLEAN_CUT&quot;,
+      &quot;target&quot;: &quot;base_solid&quot;,
+      &quot;tool&quot;: &quot;hole_cutout&quot;
+    }
+  ]
+}
+</code></pre>
+<h4 id="component-b-the-javascript-translator-the-interpreter">Component B: The JavaScript "Translator" (The Interpreter)</h4>
+<p>This is the core of your web application. It is a <strong>tree walker</strong> that uses the "Visitor" pattern. Its job is to read the <code>history</code> array from the JSON and call the Manifold3D API.</p>
+<p><strong>Example <code>translator.js</code> (Simplified):</strong></p>
+<pre><code class="language-javascript">// (Assumes Manifold3D WASM module is loaded as 'manifold')
+
+class ParametricEngine {
+  constructor() {
+    this.cache = new Map(); // Stores features by ID (e.g., 'base_solid')
+  }
+
+  // Main function to build the model
+  build(contract) {
+    this.cache.clear();
+    const params = contract.parameters;
+
+    // 1. Create a parameter evaluator
+    // (This is a helper that safely evaluates &quot;width / 2&quot; to 50)
+    const eval = (expr) =&gt; this.evaluate(expr, params);
+
+    // 2. Walk the feature tree
+    for (const step of contract.history) {
+      switch (step.type) {
+
+        case 'SKETCH_2D':
+          // Creates a 2D Manifold.CrossSection object
+          const poly = manifold.CrossSection.rectangle(
+            eval(step.shapes[0].w), 
+            eval(step.shapes[0].h)
+          );
+          this.cache.set(step.id, poly);
+          break;
+
+        case 'EXTRUDE':
+          // Get the 2D sketch from the cache
+          const sketch = this.cache.get(step.target);
+          const depth = eval(step.depth);
+
+          // Call Manifold API
+          const solid = manifold.Manifold.extrude(sketch, depth);
+          this.cache.set(step.id, solid);
+          break;
+
+        case 'CYLINDER':
+          const r = eval(step.radius);
+          const h = eval(step.height);
+          const pos = [eval(step.position[0]), eval(step.position[1]), eval(step.position[2])];
+
+          // Call Manifold API
+          let cyl = manifold.Manifold.cylinder(h, r);
+          cyl = cyl.translate(pos);
+          this.cache.set(step.id, cyl);
+          break;
+
+        case 'BOOLEAN_CUT':
+          // Get the two solids from the cache
+          const target = this.cache.get(step.target);
+          const tool = this.cache.get(step.tool);
+
+          // Call Manifold API
+          const result = manifold.Manifold.difference(target, tool);
+          this.cache.set(step.id, result);
+          break;
+      }
+    }
+
+    // Return the final feature
+    return this.cache.get(contract.history.at(-1).id);
+  }
+
+  evaluate(expr, params) {
+    // In production, use a safe math parser, NOT eval()!
+    if (typeof expr === 'number') return expr;
+    let str = expr.toString();
+    for (const [key, val] of Object.entries(params)) {
+      str = str.replaceAll(key, val);
+    }
+    return new Function(`return ${str}`)();
+  }
+}
+</code></pre>
+<h4 id="component-c-the-manifold3d-kernel-the-machine">Component C: The Manifold3D Kernel (The "Machine")</h4>
+<p>This is the "dumb" but powerful engine. It doesn't know what a "feature tree" is. It only knows how to execute low-level commands passed to it by the Translator.</p>
+<hr />
+<h3 id="3-the-full-workflow-step-by-step">3. The Full Workflow (Step-by-Step)</h3>
+<p>Here is what happens when a user changes a parameter:</p>
+<ol>
+<li>
+<p><strong>Initial Load:</strong></p>
+<ul>
+<li>The browser loads your web app, the <code>Manifold3D.wasm</code> module, and the <code>recipe.json</code> for a default model.</li>
+<li>The <code>ParametricEngine</code> runs <code>build(recipe)</code> for the <em>first time</em>.</li>
+<li>It generates the final <code>Manifold</code> object.</li>
+<li>You convert this object to a <code>THREE.BufferGeometry</code> and add it to your scene.</li>
+</ul>
+</li>
+<li>
+<p><strong>User Interaction:</strong></p>
+<ul>
+<li>A user moves a UI slider, changing <code>parameters.width</code> from <code>100</code> to <code>110</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>The Re-Build:</strong></p>
+<ul>
+<li>You call <code>engine.build(recipe)</code> again with the <em>new</em> parameters.</li>
+<li>The engine <strong>throws away all old results</strong> in its cache.</li>
+<li>It re-runs the <em>entire</em> history from top to bottom, but this time using <code>width = 110</code>.</li>
+<li><code>SKETCH_2D</code>: Creates a <em>wider</em> 2D rectangle.</li>
+<li><code>EXTRUDE</code>: Extrudes the <em>wider</em> sketch.</li>
+<li><code>CYLINDER</code>: Re-creates the cylinder at the <em>new</em> position (<code>width / 2</code> is now <code>55</code>).</li>
+<li><code>BOOLEAN_CUT</code>: Subtracts the cylinder from the wider block.</li>
+<li>The whole process takes <strong>5-10 milliseconds</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>The Render:</strong></p>
+<ul>
+<li>The <code>build()</code> function returns the <em>new</em> <code>Manifold</code> object.</li>
+<li>You <strong>dispose of the old <code>BufferGeometry</code></strong> in Three.js (to prevent memory leaks).</li>
+<li>You create a new <code>BufferGeometry</code> from the new Manifold object and put it in the scene.</li>
+<li>To the user, the model appears to have "updated instantly."</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3 id="4-the-real-work-challenges">4. The "Real" Work &amp; Challenges</h3>
+<p>This architecture is robust, but the work is <strong>significant</strong>. The complexity is no longer in Three.js, but in building the translator.</p>
+<ol>
+<li>
+<p><strong>The Exporter Plugin (The #1 Hurdle):</strong>
+    This is the "Compiler Frontend." You must write a plugin for SolidWorks (C#), Inventor (VBA/iLogic), or Fusion 360 (Python) that can read the <em>real</em> feature tree and export your <em>custom</em> JSON. This is a complex, software-specific task.</p>
+</li>
+<li>
+<p><strong>2D Sketch Engine:</strong>
+    My example used a simple rectangle. A real translator needs to read/execute complex 2D sketches with lines, arcs, and constraints. This is a major engineering task in itself.</p>
+</li>
+<li>
+<p><strong>Topological Referencing (The "Hard Problem"):</strong>
+    My JSON used math (<code>width / 2</code>). A real CAD model uses topology (<code>sketch on this face</code>, <code>fillet on this edge</code>). When the model rebuilds, "Face #3" might become "Face #5". You must build a system to reliably track these relationships. This is the hardest part of CAD development.</p>
+</li>
+<li>
+<p><strong>Fillets and Chamfers (The Kernel Limitation):</strong>
+    Manifold3D is a CSG kernel and does <em>not</em> have simple commands for fillets or chamfers. You must implement the math for these yourself (e.g., by creating a "negative" torus shape and subtracting it), which is extremely difficult.</p>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

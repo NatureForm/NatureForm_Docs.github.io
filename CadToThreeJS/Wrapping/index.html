@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://natureform.github.io/CadToThreeJS/Wrapping/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Object Wrapping - NatureForm Documentation</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">NatureForm Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Frontend</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Model Configurator</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/Collision/" class="dropdown-item">Collision</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/WrappingLogic/" class="dropdown-item">WrappingLogic</a>
+</li>
+            
+<li>
+    <a href="../../Frontend/ModelConfigurator/SilhouetteExtractor/" class="dropdown-item">Silhouette Extractor</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../Frontend/FloorplanConfigurator/" class="dropdown-item">Floorplan Configurator</a>
+</li>
+                                    
+<li>
+    <a href="../../Frontend/Framework/" class="dropdown-item">Framework</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../ThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../ThreeJS/ThreeJS%20Backend/" class="dropdown-item">ThreeJS Backend</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cad to ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../GLB%2BParameters/" class="dropdown-item">GLB + Parameters</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Object Wrapping</a>
+</li>
+                                    
+<li>
+    <a href="../FeatureTreeToManifold3d/" class="dropdown-item">Feature Tree Transpiling</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Fertigung</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Maschinenvergleich/" class="dropdown-item">Maschinen</a>
+</li>
+                                    
+<li>
+    <a href="../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marktstrategie & Analyse</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Marktanalyse/" class="dropdown-item">Marktstrategie & Analyse</a>
+</li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Kundenbeduerfnisse/" class="dropdown-item">Kundenbedeurfnisse</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Konkurrenzanalyse</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Konkurrenzanalyse/Ikea/" class="dropdown-item">Ikea</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../Marktstrategie%20%26%20Analyse/Zielgruppe/" class="dropdown-item">Zielgruppe</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../GLB%2BParameters/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../FeatureTreeToManifold3d/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            
+            
+            
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="the-domain-specific-generative-architecture">The "Domain-Specific" Generative Architecture</h3>
+<p>This document outlines a "hybrid" or "emulated logic" approach for a parametric web configurator. This architecture is designed for a specific domain (e.g., furniture made from wooden boards) and avoids the extreme complexity of 1:1 CAD feature tree translation.</p>
+<p>It works by <strong>faking the CAD logic</strong> in JavaScript and using the web app as a "parameter generator" that can (optionally) feed data back to a simplified, "real" CAD model for manufacturing.</p>
+<hr />
+<h3 id="1-the-core-philosophy-generate-dont-translate">1. The Core Philosophy: "Generate, Don't Translate"</h3>
+<p>The fundamental flaw of other methods is trying to <em>translate</em> a complex, interdependent feature tree. This architecture abandons that idea.</p>
+<p>Instead, you write a <strong>JavaScript engine that <em>knows how to build your product</em></strong> (e.g., a cabinet) from scratch, using its <em>own</em> logic. This logic is much simpler because it's only concerned with the final placement of the boards, not the complex CAD-level sketches, constraints, or feature dependencies.</p>
+<p>You are not building a <em>generic CAD program</em>; you are building a <em>bookshelf generator</em>.</p>
+<hr />
+<h3 id="2-the-web-side-workflow-the-board-generator">2. The Web-Side Workflow (The "Board Generator")</h3>
+<p>This is where all the "magic" happens. Your web app is a standalone generative engine.</p>
+<ol>
+<li>
+<p><strong>Input:</strong> The "import" is not a 3D model. The input is a simple JSON object of high-level parameters, e.g., <code>{"model": "bookshelf", "width": 800, "height": 1800, "shelfCount": 4}</code>.</p>
+</li>
+<li>
+<p><strong>The "Fake" Logic Engine:</strong> You write specific JavaScript functions for each furniture type:</p>
+<ul>
+<li><code>buildBookshelf(params)</code></li>
+<li><code>buildCabinet(params)</code></li>
+<li><code>buildTable(params)</code></li>
+</ul>
+</li>
+<li>
+<p><strong>The Process (The Math):</strong>
+    Inside <code>buildBookskey(params)</code>, your code doesn't care about "extrusions" or "features." It just does simple math to create a "shopping list" of parts (boards) and their dimensions/positions.</p>
+<p>```javascript
+// Example logic inside your buildBookshelf() function:
+const boardThickness = 18;
+const sideHeight = params.height;
+const sideWidth = params.depth;
+const topWidth = params.width;
+const shelfWidth = params.width - (2 * boardThickness);</p>
+<p>// Board 1: Left Side
+let leftBoard = Manifold.cube([boardThickness, sideWidth, sideHeight])
+                       .translate([-params.width / 2, 0, 0]);</p>
+<p>// Board 2: Right Side
+let rightBoard = Manifold.cube([boardThickness, sideWidth, sideHeight])
+                        .translate([params.width / 2 - boardThickness, 0, 0]);</p>
+<p>// Board 3: Top Board
+let topBoard = Manifold.cube([topWidth, sideWidth, boardThickness])
+                      .translate([-params.width / 2, 0, params.height - boardThickness]);</p>
+<p>// ... etc. for other boards and shelves ...
+```</p>
+</li>
+<li>
+<p><strong>The Assembly:</strong>
+    Your <code>build</code> function ends by "assembling" all the individual board objects using Manifold3D's <code>union</code> operation. This creates a <em>single, clean 3D model</em> from many simple primitives.</p>
+<p>```javascript
+// Combine all the parts into one model
+let finalModel = Manifold.union(leftBoard, rightBoard, topBoard /<em>, ...all_other_boards</em>/);</p>
+<p>// This 'finalModel' is what you convert to a BufferGeometry for Three.js
+return finalModel;
+```</p>
+<p>This is what you mean by "piecing the building shapes together." You are generating and "gluing" (union-ing) them in real-time.</p>
+</li>
+</ol>
+<hr />
+<h3 id="3-the-cad-side-workflow-the-data-round-trip">3. The CAD-Side Workflow (The "Data Round-Trip")</h3>
+<p>This is the clever part of your system. You are creating a "decoupled" workflow where the web app and the "real" CAD file are two separate systems that only share simple parameters.</p>
+<h4 id="a-web-to-cad-exporting-for-manufacturing"><strong>A) Web-to-CAD (Exporting for Manufacturing)</strong></h4>
+<p>Your web app's primary job is to generate a simple JSON file of the <em>final, calculated dimensions</em>.</p>
+<ol>
+<li>
+<p><strong>Web App:</strong> User finalizes their 800mm wide bookshelf. Your app generates a <code>manufacturing_params.json</code>:</p>
+<p><code>json
+{
+  "side_panel_height": 1800,
+  "side_panel_width": 300,
+  "top_panel_width": 800,
+  "shelf_panel_width": 764
+}</code></p>
+</li>
+<li>
+<p><strong>CAD Software (Inventor/SolidWorks):</strong></p>
+<ul>
+<li>You have a <strong>separate, "real" CAD model</strong> of the bookshelf. This model is <em>also</em> parametric, but it is linked to an external JSON file.</li>
+<li>You use a simple plugin (like iLogic in Inventor) to read <code>manufacturing_params.json</code>.</li>
+<li>The plugin maps the JSON values to the "real" model's parameters (e.g., <code>InventorParam("side_height") = json.side_panel_height</code>).</li>
+<li>The "real" CAD model updates, and you can now instantly generate your "real" factory drawings and CAM paths.</li>
+</ul>
+</li>
+</ol>
+<h4 id="b-cad-to-web-importing-generic-models"><strong>B) CAD-to-Web (Importing "Generic Models")</strong></h4>
+<p>This is the reverse. "Importing a model" simply means creating a new <code>config.json</code> file that tells your web app which generator to use and which parameters to show.</p>
+<ul>
+<li>You don't import a <code>glb</code>.</li>
+<li>You just create a new JSON file like:
+    <code>json
+    {
+      "generator_function": "buildCabinet",
+      "configurable_params": [
+        { "name": "width", "min": 600, "max": 1200 },
+        { "name": "height", "min": 1000, "max": 2200 },
+        { "name": "hasDoubleDoors", "type": "boolean" }
+      ]
+    }</code></li>
+<li>Your web app reads this file and dynamically builds the UI sliders and checkboxes.</li>
+</ul>
+<hr />
+<h3 id="4-why-this-architecture-is-a-win">4. Why This Architecture is a "Win"</h3>
+<ul>
+<li><strong>It's Simple:</strong> You avoid 99% of the complexity of CAD. Your logic is just <code>width - (2 * thickness)</code>.</li>
+<li><strong>It's Fast:</strong> Re-building a dozen boxes with Manifold3D is <em>instantaneous</em> (milliseconds).</li>
+<li><strong>It's Not a "Dead End":</strong> This system is robust and scalable. To add a new product (e.g., a dresser), you just write a new <code>buildDresser(params)</code> function. You don't have to change the core engine.</li>
+<li><strong>It's Decoupled:</strong> The "web model" and the "manufacturing model" are totally separate. This is a huge advantage. If the manufacturing model needs to add complex details (like dowel holes or specific hardware), it doesn't break your web visual. The web app only needs to send the high-level parameters.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

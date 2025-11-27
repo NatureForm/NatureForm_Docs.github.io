@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://natureform.github.io/Frontend/ModelConfigurator/Collision/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Collision - NatureForm Documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">NatureForm Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Frontend</a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Model Configurator</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Overview</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Collision</a>
+</li>
+            
+<li>
+    <a href="../WrappingLogic/" class="dropdown-item">WrappingLogic</a>
+</li>
+            
+<li>
+    <a href="../SilhouetteExtractor/" class="dropdown-item">Silhouette Extractor</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../FloorplanConfigurator/" class="dropdown-item">Floorplan Configurator</a>
+</li>
+                                    
+<li>
+    <a href="../../Framework/" class="dropdown-item">Framework</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../ThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../ThreeJS/ThreeJS%20Backend/" class="dropdown-item">ThreeJS Backend</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Cad to ThreeJS</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../CadToThreeJS/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../CadToThreeJS/GLB%2BParameters/" class="dropdown-item">GLB + Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../../../CadToThreeJS/Wrapping/" class="dropdown-item">Object Wrapping</a>
+</li>
+                                    
+<li>
+    <a href="../../../CadToThreeJS/FeatureTreeToManifold3d/" class="dropdown-item">Feature Tree Transpiling</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Fertigung</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                    
+<li>
+    <a href="../../../Fertigung/Maschinenvergleich/" class="dropdown-item">Maschinen</a>
+</li>
+                                    
+<li>
+    <a href="../../../Fertigung/Fertigung/" class="dropdown-item">Overview</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Marktstrategie & Analyse</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Marktanalyse/" class="dropdown-item">Marktstrategie & Analyse</a>
+</li>
+                                    
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Kundenbeduerfnisse/" class="dropdown-item">Kundenbedeurfnisse</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Konkurrenzanalyse</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Konkurrenzanalyse/Ikea/" class="dropdown-item">Ikea</a>
+</li>
+    </ul>
+  </li>
+                                    
+<li>
+    <a href="../../../Marktstrategie%20%26%20Analyse/Zielgruppe/" class="dropdown-item">Zielgruppe</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../WrappingLogic/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#2d-floorplan-collision-utilities" class="nav-link">2D Floorplan Collision &amp; Utilities</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#core-logic-issilhouetteinsidefloorspace" class="nav-link">Core Logic: isSilhouetteInsideFloorspace</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#function-reference" class="nav-link">Function Reference</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="2d-floorplan-collision-utilities">2D Floorplan Collision &amp; Utilities</h1>
+<p>This document outlines the utility functions used for <strong>2D collision and containment checks</strong>. The primary goal of this code is to determine if a 3D object's 2D footprint (its "silhouette") is fully contained within a 2D floorplan polygon.</p>
+<p>This functionality is essential for interactive configurators to validate object placement, preventing users from moving items outside a defined room, placing objects on top of each other, or having them intersect with walls.</p>
+<hr />
+<h2 id="core-logic-issilhouetteinsidefloorspace">Core Logic: <code>isSilhouetteInsideFloorspace</code></h2>
+<p>The main function, <code>isSilhouetteInsideFloorspace</code>, performs a robust, two-part check to confirm an object is fully contained within the floorplan.</p>
+<p>For an object to be considered "inside," <strong>both</strong> of the following conditions must be true:</p>
+<ol>
+<li><strong>All Points Inside:</strong> Every single vertex of the object's 2D silhouette must be <em>inside</em> the floorplan polygon. This check is performed by the <code>isPointInPolygon</code> helper.</li>
+<li><strong>No Edges Intersect:</strong> No edge (the line between two vertices) of the silhouette can <em>cross</em> any edge of the floorplan polygon. This check is performed by the <code>doLinesIntersect</code> helper.</li>
+</ol>
+<p>This dual-check system is crucial. It correctly handles complex cases, such as a large "U" shaped object attempting to wrap around a small part of the floorplan, which might have its vertices inside but its edges intersecting.</p>
+<hr />
+<h2 id="function-reference">Function Reference</h2>
+<h3 id="issilhouetteinsidefloorspacesilhouettemesh-floorpolygon"><code>isSilhouetteInsideFloorspace(silhouetteMesh, floorPolygon)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> The primary function. Checks if a given silhouette mesh is fully contained within a floorplan polygon.</li>
+<li><strong>Parameters:</strong><ul>
+<li><code>silhouetteMesh</code>: The <code>THREE.Mesh</code> representing the object's 2D footprint.</li>
+<li><code>floorPolygon</code>: An array of 2D points (e.g., <code>{x: 10, y: 5}</code>) defining the floor's boundary.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> <code>true</code> if the silhouette is fully inside, <code>false</code> otherwise.</li>
+</ul>
+<h3 id="gettransformedsilhouetteverticessilhouettemesh"><code>getTransformedSilhouetteVertices(silhouetteMesh)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> Extracts a 2D vertex list (a polygon) from a 3D silhouette mesh.</li>
+<li><strong>Process:</strong><ol>
+<li>Ensures the mesh's world matrix is up-to-date.</li>
+<li>Reads the vertex <code>position</code> data from the mesh's geometry.</li>
+<li>Applies the mesh's <code>matrixWorld</code> (its final world position, rotation, and scale) to every vertex.</li>
+<li>Converts the 3D <code>(x, y, z)</code> coordinates into 2D <code>(x, y)</code> coordinates by <strong>using the <code>x</code> and <code>z</code> values</strong> (the top-down footprint).</li>
+<li>De-duplicates the vertices to create a clean polygon.</li>
+</ol>
+</li>
+<li><strong>Returns:</strong> An array of unique 2D points (e.g., <code>[{x: 1, y: 1}, {x: 2, y: 1}, ...]</code>).</li>
+</ul>
+<h3 id="dolinesintersectp1-p2-p3-p4"><code>doLinesIntersect(p1, p2, p3, p4)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> A mathematical helper to check if two 2D line segments, (p1, p2) and (p3, p4), intersect.</li>
+<li><strong>Algorithm:</strong> Uses a standard computational geometry algorithm based on the <strong>orientation</strong> (clockwise, counter-clockwise, or collinear) of the three-point combinations.</li>
+<li><strong>Returns:</strong> <code>true</code> if the segments cross, <code>false</code> otherwise.</li>
+</ul>
+<h3 id="ispointinpolygonpoint-polygon"><code>isPointInPolygon(point, polygon)</code></h3>
+<ul>
+<li><strong>Purpose:</strong> A mathematical helper to check if a 2D point is inside a 2D polygon.</li>
+<li><strong>Algorithm:</strong> Implements the <strong>Ray-Casting Algorithm</strong>. It "casts" an imaginary ray from the point in one direction (e.g., positive X) and counts how many times it crosses the polygon's edges.<ul>
+<li>An <strong>odd</strong> number of crossings means the point is <strong>inside</strong>.</li>
+<li>An <strong>even</strong> number of crossings means the point is <strong>outside</strong>.</li>
+</ul>
+</li>
+<li><strong>Returns:</strong> <code>true</code> if the point is inside, <code>false</code> otherwise.</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
