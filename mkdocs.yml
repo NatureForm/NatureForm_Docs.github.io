@@ -42,16 +42,19 @@ nav:
     - 'Framework': 'Frontend/Framework.md'
   - 'ThreeJS':
     - "Overview": 'ThreeJS/index.md'
+    - "ThreeJS Backend": 'ThreeJS/ThreeJS Backend.md'
   - 'Cad to ThreeJS':
     - 'Overview': 'CadToThreeJS/index.md'
     - 'GLB + Parameters': 'CadToThreeJS/GLB+Parameters.md'
     - 'Object Wrapping': 'CadToThreeJS/Wrapping.md'
     - 'Feature Tree Transpiling': 'CadToThreeJS/FeatureTreeToManifold3d.md'
   - 'Fertigung':
+    - 'Overview' : 'Fertigung/Fertigung.md'
     - 'Maschinen': 'Fertigung/Maschinenvergleich.md'
     - 'Fertigung': 'Fertigung/Fertigung.md'
   - 'Marktstrategie & Analyse': 
     - 'Marktstrategie & Analyse': 'Marktstrategie & Analyse/Marktanalyse.md'
     - 'Kundenbedeurfnisse': 'Marktstrategie & Analyse/Kundenbeduerfnisse.md'
-    - 'Konkurrenzanalyze': 'Marktstrategie & Analyse/Konkurrenzanalyze.md'
+    - 'Konkurrenzanalyse':
+      - 'Ikea': 'Marktstrategie & Analyse/Konkurrenzanalyse/Ikea.md'
     - 'Zielgruppe': 'Marktstrategie & Analyse/Zielgruppe.md'

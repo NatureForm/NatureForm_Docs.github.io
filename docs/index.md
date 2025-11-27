@@ -20,7 +20,7 @@ Das Projekt ist in mehrere Teilbereiche gegliedert, die jeweils in eigenen Markd
 - [📈 Marktstrategie & Analyse](./Marktstrategie & Analyse/Marktanalyse.md)  
   Zielgruppe, Marktpotenzial, USP, Just-in-Time-Fertigung, Wettbewerbsanalyse.
 
-- [💻 Konfigurator-Software](./Konfigurator.md)  
+- [💻 Konfigurator-Software](./Frontend/ModelConfigurator/index.md)  
   Konzept für den Web-basierten Möbelkonfigurator, Datenfluss von Bestellung bis Fertigung.
 
 - [⚙️ Fertigung & Maschinen](./Fertigung/Fertigung.md)  
