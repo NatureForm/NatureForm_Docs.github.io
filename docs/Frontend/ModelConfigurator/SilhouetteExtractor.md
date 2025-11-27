@@ -1,4 +1,4 @@
-# Extracting a 2D Silhouette
+# Extracting a 2D Silhouette (Deprecated)
 
 This document outlines the process for dynamically generating a 2D silhouette polygon from a 3D model. This technique is highly effective for creating accurate 2D physics colliders for 3D objects, especially in a top-down perspective, as it accounts for the model's current shape (e.g., from an animation).
 
